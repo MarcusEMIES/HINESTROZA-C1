@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ 
+        img {
+        width: 100%;
+        height: auto; /* Mantiene la proporción */
+        .background-image-container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('E:/FOTOS/FINALIZADOS/07042023-_DSC5186-Editar.jpg');
+        background-size: cover;    /* La imagen cubre todo el área */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    }
+    
+    }
+    body {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centra el contenido horizontalmente */
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+    
+            img {
+                max-width: 100%; /* Hace que la imagen sea responsiva */
+                height: auto; /* Mantiene la proporción de la imagen */
+                transition: all 0.5s ease; /* Transición suave */
+                border: 1px solid #ddd; /* Añade un borde a la imagen */
+                border-radius: 8px; /* Bordes redondeados */
+            }
+    
+            .descripcion {
+                text-align: center; /* Centra la descripción */
+                margin: 10px 0; /* Margen arriba y abajo */
+                font-size: 18px; /* Tamaño de fuente de la descripción */
+            }
+    
+            .boton-ajustar {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #007BFF;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                margin: 10px 0; /* Margen arriba y abajo */
+            }
+    
+            .boton-ajustar:hover {
+                background-color: #0056b3; /* Color al pasar el ratón */
+            }
+    
+            .pantalla-completa {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover; /* Cubre toda la pantalla sin distorsionar */
+                z-index: 1000; /* Asegura que la imagen esté en la parte superior */
+            }
+    
+            footer {
+                margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+            }
+    
+            .volver {
+                font-size: 16px;
+                color: #0066cc;
+                text-decoration: none;
+            }
+    
+            .volver:hover {
+                text-decoration: underline; /* Subraya el texto al pasar el ratón */
+            }
+
+           
+        </style>
+
+   
+</head>
+<body>
+    
+    <img src="E:\FOTOS\FINALIZADOS\PORTRAITS\_DSC1900-2-Edit-Editar.jpg" alt="_DSC1900-2-Edit-Editar.jpg" width="2000">
+    <br>  
+    <!-- Descripción de la imagen -->
+      <p class="descripcion">
+        Esta es la fotografía en tamaño completo. Aquí puedes agregar una descripción detallada de la imagen, como la fecha, el lugar y cualquier otro detalle relevante.
+    </p>
+    <button onclick="ajustarImagen()" class="boton-ajustar">Ajustar a Pantalla Completa</button>
+    <br>
+    <hr>
+    <br>
+</body>
+<footer>
+    <!-- Enlace para volver a la página principal -->
+    <a href="index.html" class="volver">Volver a la página principal</a>
+</footer>

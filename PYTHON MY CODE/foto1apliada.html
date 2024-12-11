@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <style>
+      div{padding: 0.7rem; font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius; margin: 0.5rem;}
+    </style> -->
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid bg-success p-2 bs-border-opacity">
+        <a class="navbar-brand">Marcus Hinestroza</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <section>
+      <div class="container mt-5 p-3">
+        <div class="row">
+          <div class="col-12 col-md 10 col-lg 2 p-1 bg-danger">
+            <form>
+              <div class="mb-3 p-1 bg-primary">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-12 col-md 6 col-lg 3 bg-secondary">Columna 2</div>
+          <div class="col-12 col-md 6 col-lg 3 bg-warning">Columna 3</div>
+          <div class="col-12 col-md 6 col-lg 3 bg-primary">Columna 4</div>
+        </div>
+      </div>
+      <section>
+        <div class="container 12 p-3 bg-success">
+          <div class="row">
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              Ikea
+            </div>
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              Maison
+            </div>
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              Nike
+            </div>
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              G-Star
+            </div>
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              Diesel
+            </div>
+            <div
+              class="col-sm-6 md-4 lg-2 bg-light p-1 shadow-lg p-3 mb-2 bg-body-tertiary rounded m-0.2"
+            >
+              MTH
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="container-fluid bg-info border-rounded">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+    <div class="container" style="padding-top: 3rem">
+      <div class="row">
+        <img
+          src="E:\FOTOS\FINALIZADOS\_DSC4470.jpg"
+          alt="_DSC4470.jpg"
+          width="2000"
+        />
+        <br />
+        <!-- Descripción de la imagen -->
+        <p class="descripcion">
+          Esta es la fotografía en tamaño completo. Aquí puedes agregar una
+          descripción detallada de la imagen, como la fecha, el lugar y
+          cualquier otro detalle relevante.
+        </p>
+        <button onclick="ajustarImagen()" class="boton-ajustar">
+          Ajustar a Pantalla Completa
+        </button>
+        <script>
+          function ajustarImagen() {
+            // Obtén la imagen por su ID
+            let imagen = document.getElementById("imagen");
+
+            // Verifica si la imagen ya está en pantalla completa
+            if (
+              imagen.style.width === "100vw" &&
+              imagen.style.height === "100vh"
+            ) {
+              // Si ya está en pantalla completa, restablece el tamaño original
+              imagen.style.width = "auto";
+              imagen.style.height = "auto";
+            } else {
+              // Ajusta la imagen a pantalla completa
+              imagen.style.width = "100vw";
+              imagen.style.height = "100vh";
+              imagen.style.objectFit = "cover"; // Ajusta la imagen manteniendo proporciones
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+  <footer class="container bg-dark mt-4 text-center p-5">
+    <div class="row">
+      <!-- footer bootstrap -->
+      <div class="col-3 md-3">
+        <a href="index.html" class="volver"
+          ><i class="bi bi-arrow-through-heart-fill"></i> Volver a la página
+          principal <i class="bi bi-arrow-through-heart-fill"></i
+        ></a>
+      </div>
+
+      <div class="col-3 md-3">
+        <a href="index.html" class="volver"
+          ><i class="bi bi-threads-fill"></i
+        ></a>
+      </div>
+
+      <div class="col-3 md-3">
+        <a href="index.html" class="volver"><i class="bi bi-instagram"></i></a>
+      </div>
+
+      <div class="col-3 md-3">
+        <a href="index.html" class="volver"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+</html>

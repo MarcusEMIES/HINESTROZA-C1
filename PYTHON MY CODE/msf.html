@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Seguridad - Militaires Sans Frontières</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(90, 89, 89);
+
+        }
+
+        .cabecero {
+            font-feature-settings: "akhn";
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: rgb(59, 59, 59);
+            /* padding-bottom: 4px; */
+        }
+
+        #area {
+            background-color: rgb(244, 238, 238);
+        }
+
+        form label {
+            display: inline-block;
+            width: 100px;
+            /* Ancho para alinear las etiquetas */
+            margin-bottom: 10px;
+        }
+
+        form input,
+        form textarea {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+            margin-top: 1rem;
+        }
+
+
+        /* section { 
+            border-radius: 4%;
+            background-color: rgb(123, 148, 168);
+            text-align: center;
+            margin-left: 3rem;
+        } */
+
+        #boton {
+            justify-items: center;
+            padding-left: 99999px;
+        }
+
+        p {
+            padding: 1rem 2rem 3rem;
+            color: rgb(34, 34, 34);
+        }
+
+        .cabecero img {
+            border: 10px solid rgb(25, 24, 28);
+            color: rgb(17, 139, 17);
+            transition: box-shadow 0.3s ease;
+            margin: 3rem;
+        }
+
+        .cabecero :hover {
+            box-shadow: 0 0.1rem 0.4rem black;
+        }
+
+        .cabecero,
+        img {
+            text-align: center;
+            color: rgb(229, 229, 229);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+    <header>
+        <article class="cabecero">
+            <a href="https://metalgear.fandom.com/es/wiki/Militaires_Sans_Fronti%C3%A8res"><img
+                    src="C:\Users\shavo\Desktop\VB SHARED\MILITARES SIN FRONTERAS.png" width="420"></a>
+        </article>
+        <br>
+
+        <h1>Militaires Sans Frontières</h1>
+
+        <p>Lema de la empresa: "Soldados sin Fronteras, Luchando por la Libertad y la Justicia"</p>
+        <p>Ideología: Nuestra empresa se basa en la creencia de que la seguridad y la justicia son derechos
+            fundamentales que deben protegerse más allá de las fronteras nacionales.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#servicios">Servicios de Seguridad</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#historia">Historia</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <ol> Elemento 5
+        <li value="40">perito</li>
+        <li>perito</li>
+        <li>perito</li>
+        <li>perito</li>
+
+    </ol>
+    <ul>AMIGO </ul>
+    <li style="list-style-type: lower-alpha;">perito</li>
+    <li style="list-style-type: lower-alpha;">perito</li>
+    <li style="list-style-type: lower-alpha;">perito</li>
+    <li style="list-style-type: lower-alpha;">perito</li>
+    <li style="list-style-type: lower-alpha;">perito</li>
+    <li>perito</li>
+    <li>perito</li>
+    <li>perito</li>
+    <ul>AMIGO </ul>
+    <ul>AMIGO </ul>
+
+    <ol>Elemento 5</ol>
+    <ol>Elemento 5</ol>
+    <ol>Elemento 5</ol>
+
+    <section id="servicios">
+        <h2>Servicios de Seguridad</h2>
+        <p>Ofrecemos una amplia gama de servicios de seguridad, incluyendo:</p>
+        <ul>
+            <li><a href="#">Protección de VIPs</a></li>
+            <li><a href="#">Seguridad de Instalaciones</a></li>
+            <li><a href="#">Seguridad Cibernética</a></li>
+            <li><a href="#">Consultoría en Seguridad</a></li>
+        </ul>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Nuestra sede principal se encuentra en [Dirección], pero operamos en todo el mundo para satisfacer las
+            necesidades de nuestros clientes.</p>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación</h2>
+        <p>Ofrecemos programas de formación en seguridad para individuos y organizaciones. Nuestros cursos incluyen
+            entrenamiento en tácticas de combate, seguridad cibernética y gestión de crisis.</p>
+    </section>
+
+    <section id="historia">
+        <h2>Historia</h2>
+        <p>Militaires Sans Frontières fue fundada en [Año de Fundación] por [Fundador]. Desde entonces, hemos estado
+            comprometidos con nuestro lema de "Soldados sin Fronteras, Luchando por la Libertad y la Justicia", y hemos
+            llevado a cabo numerosas misiones exitosas en todo el mundo.</p>
+    </section>
+    <br>
+    <section style="padding: 20px;">
+        <form>
+
+            <label for="nombre"> Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Apellido"><br>
+            <label for="area" style="text-align: center; display: flex;padding-left:initial"> Comentarios
+                acerca</label><br>
+            <textarea id="area" name="comentarios" cols="70" rows="10" id="area" placeholder="Comentarios"></textarea>
+
+            <label id="boton" for="button" type="button"></label>
+            <input type="submit">
+
+            <br>
+
+
+
+        </form>
+
+
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Militaires Sans Frontières. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

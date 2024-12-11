@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Bienvenidos a la Introducción a JavaScript</h1>
+    <p>En esta clase exploraremos los conceptos clave de JavaScript, el lenguaje de programación que añade
+        interactividad a la web.</p>
+
+    <!-- SECCIÓN 1: Variables en JavaScript -->
+    <section>
+        <h2>Variables en JavaScript</h2>
+        <p>Las variables son contenedores que almacenan datos. Puedes crear variables con <code>let</code>,
+            <code>var</code> o <code>const</code>.
+        </p>
+
+        <button onclick="ejemploVariables()">Ejecutar ejemplo de variables</button>
+        <p id="resultadoVariables"></p>
+
+        <script>
+            // Ejemplo:
+            // let ciudad = "Madrid";
+            // const pais = "España";
+            // Muestra ciudad y país en consola
+            // console.log("Ciudad:", ciudad, "- País:", pais);
+
+
+
+
+            function ejemploVariables() {
+                let nombre = "Marco Aurelio";
+                const edad = 33;
+                console.log(nombre + edad);
+                // TODO: Declara una variable `nombre` usando `let` y una constante `edad` con `const`.
+                // TODO: Muestra los valores en el elemento con id `resultadoVariables`.
+            }
+
+            
+        </script>
+    </section>
+
+    <section>
+
+        <h1> MI CODE</h1>
+        <script>
+          
+             
+            function variablesMarcus() {
+                let virus = "Virus T";
+                const dosis = 40;
+                console.log( virus + dosis)
+
+            }
+
+            int = 30;
+            short = 40;
+            Long = 50
+
+            console.log ( 30 +40 + 50);
+
+        </script>
+
+    </section>
+
+    <!-- SECCIÓN 2: Condiciones en JavaScript -->
+    <section>
+        <h2>Condiciones en JavaScript</h2>
+        <p>Las condiciones permiten tomar decisiones dentro del código.</p>
+
+        <button onclick="ejemploCondiciones()">Ejecutar ejemplo de condiciones</button>
+        <p id="resultadoCondiciones"></p>
+
+        <script>
+
+
+            // Ejemplo:
+            // let temperatura = prompt("Introduce la temperatura:");
+            // if (temperatura > 30) {
+            //     console.log("Hace calor");
+            // } else {
+            //     console.log("Hace frío");
+            // }
+
+
+
+            function ejemploCondiciones() {
+                let edad = prompt("Introduce tu edad:");
+                if (edad >= 18) {
+                    document.getElementById("resultadoCondiciones").innerHTML = "Eres mayor de edad.";
+                } else {
+                    document.getElementById("resultadoCondiciones").innerHTML = "Eres menor de edad.";
+                }
+
+
+                // TODO: Pide al usuario su edad y muestra un mensaje en `resultadoCondiciones`
+                // indicando si es mayor o menor de edad.
+            }
+        </script>
+    </section>
+
+    <!-- SECCIÓN 3: Bucles en JavaScript -->
+    <section s>
+        <h2>Bucles en JavaScript</h2>
+        <p>Los bucles permiten ejecutar un bloque de código repetidas veces.</p>
+
+        <button onclick="ejemploBucles()">Ejecutar ejemplo de bucles</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <ul id="resultadoBucles"></ul>
+
+        <script>
+            // Ejemplo:
+            // for (let j = 10; j >= 1; j--) {
+            //     console.log("Cuenta regresiva:", j);
+            // }
+
+            function ejemploBucles() {
+
+                let lista = document.getElementById("resultadoBucles");
+                lista.innerHTML = "";  // Limpiamos la lista
+
+                for (let i = 1; i <= 5; i++) {
+                    let li = document.createElement("li");
+                    li.textContent = `Canica ${i}`;
+
+                    lista.appendChild(li);
+                }
+                // TODO: Usa un bucle `for` para mostrar los números del 1 al 5 en `resultadoBucles`.
+            }
+        </script>
+    </section>
+
+    <!-- SECCIÓN 4: Funciones en JavaScript -->
+    <section>
+        <h2>Funciones en JavaScript</h2>
+        <p>Las funciones son bloques de código reutilizables.</p>
+
+        <button onclick="ejemploFunciones()">Ejecutar ejemplo de funciones</button>
+        <p id="resultadoFunciones"></p>
+
+        <script>
+            // Ejemplo:
+            // function multiplicar(x, y) {
+            //     return x * y;
+            // }
+            // let resultado = multiplicar(4, 5);
+            // console.log("Resultado de la multiplicación:", resultado);
+            function ejemploFunciones() {
+                function restar(a, b) {
+                    return a + b;
+                }
+                let resultado = restar(72534823, 737384);
+                document.getElementById("resultadoFunciones").innerHTML = `El resultado de la sustraccion es: ${resultado}`;
+
+                // TODO: Crea una función que sume dos números y muestra el resultado en `resultadoFunciones`.
+            }
+        </script>
+    </section>
+
+    <!-- SECCIÓN 5: Eventos en JavaScript -->
+    <section>
+        <h2>Eventos en JavaScript</h2>
+        <p>Los eventos son interacciones que el usuario tiene con la página.</p>
+
+        <button onclick="mostrarAlerta()">Haz clic para ver un evento</button>
+
+        <script>
+            // Ejemplo:
+            // function mostrarMensaje() {
+            //     alert("Este es un mensaje de ejemplo");
+            // }
+
+            function mostrarAlerta() {
+                alert("¡TEN CUIDADO, AlGUIEN TE OBSERVA!");
+
+                // TODO: Muestra una alerta personalizada cuando el usuario haga clic en el botón.
+            }
+        </script>
+    </section>
+
+    <!-- SECCIÓN 6: Arrays en JavaScript -->
+    <section>
+        <h2>Arrays en JavaScript</h2>
+        <p>Un array es una colección de datos almacenados en posiciones llamadas índices.</p>
+
+        <button onclick="ejemploArrays()">Ejecutar ejemplo de arrays</button>
+        <p id="resultadoArrays"></p>
+
+        <script>
+            function ejemploArrays() {
+                            
+            let herramientas = ["El Martillo de Thor", "Destornillador", "Llave inglesa", "Alicate", "Sierra", "Taladro", "Cinta métrica", "Nivel", "Punzón", "Lima"]
+            document.getElementById("resultadoArrays").innerHTML = `La primera herramienta es: ${herramientas[0]}`;
+                        }
+
+            // Ejemplo:
+            // let colores = ["Rojo", "Verde", "Azul"];
+            // console.log("Último color:", colores[2]);
+
+      
+                // TODO: Crea un array de frutas y muestra la primera fruta en `resultadoArrays`.
+            
+        </script>
+    </section>
+
+    <!-- SECCIÓN 7: Objetos en JavaScript -->
+    <section>
+        <h2>Objetos en JavaScript</h2>
+        <p>Un objeto es una estructura que agrupa pares clave-valor.</p>
+
+        <button onclick="ejemploObjetos()">Ejecutar ejemplo de objetos</button>
+        <p id="resultadoObjetos"></p>
+
+        <script>
+            // Ejemplo:
+            // let coche = {
+            //     marca: "Toyota",
+            //     modelo: "Corolla",
+            //     año: 2020
+            // };
+            // console.log("Marca:", coche.marca, "- Modelo:", coche.modelo);
+
+            function ejemploObjetos() {
+
+
+                let persona = {
+                nombre: "Mr.Robot",
+                edad: 33,
+                profesion: "Robotica"
+                };
+                document.getElementById("resultadoObjetos").innerHTML = `Nombre: ${persona.nombre}, Profesión: ${persona.profesion}`;
+                // TODO: Crea un objeto `persona` con propiedades como nombre y edad, y muestra sus valores en `resultadoObjetos`.
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>
